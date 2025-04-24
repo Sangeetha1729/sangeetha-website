@@ -16,7 +16,7 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  color: white;
+  color: red;
   font-weight: bold;
   transition: background 0.3s ease, transform 0.2s ease;
 }
