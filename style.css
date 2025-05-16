@@ -57,7 +57,6 @@ body {
   opacity: 0.9;
 }
 
-}
 .blog-section {
   padding: 40px;
   background-color: #f9f9ff;
@@ -222,7 +221,16 @@ ul {
   color: #e67e22;
   border-left: 4px solid #e67e22;
 }
+@media (max-width: 768px) {
+  .horizontal-layout {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .post-image {
+    justify-content: center;
+    margin-top: 20px;
+  }
 footer {
   text-align: center;
   padding: 20px;
@@ -230,3 +238,4 @@ footer {
   color: #777;
 }
 
+}
