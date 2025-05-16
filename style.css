@@ -184,17 +184,29 @@ ul {
   color: #333;
   margin-bottom: 15px;
 }
+
 .blog-image {
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
   height: auto;
-  display: block;
-  margin: 20px auto; /* centers the image */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.horizontal-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
 
+.post-text {
+  flex: 1 1 60%;
+}
 
+.post-image {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
 .blog-post:nth-child(4) {
   border-left: 5px solid #ffd166; /* soft gold for prestige */
   background: linear-gradient(135deg, #fffdee, #fffaf0);
