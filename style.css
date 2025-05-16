@@ -231,6 +231,17 @@ ul {
     justify-content: center;
     margin-top: 20px;
   }
+  .milestone-tag {
+  background-color: #f4c542;
+  color: white;
+  padding: 4px 10px;
+  font-size: 0.8em;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 footer {
   text-align: center;
   padding: 20px;
