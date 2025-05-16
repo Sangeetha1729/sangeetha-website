@@ -121,6 +121,15 @@ section {
 ul {
   padding-left: 20px;
 }
+.gallery-link {
+  color: #0073e6;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+}
+.gallery-link:hover {
+  color: #005bb5;
+}
 
 footer {
   text-align: center;
