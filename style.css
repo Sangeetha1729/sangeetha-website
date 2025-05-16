@@ -91,6 +91,35 @@ body {
   color: #c71585;
   margin-bottom: 15px;
 }
+.collapsible {
+  background-color: #e6e6fa;
+  color: #333;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.collapsible:hover {
+  background-color: #dcd0ff;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9ff;
+  margin-top: 10px;
+  border-left: 4px solid #a0c4ff;
+  border-radius: 6px;
+}
 
 header {
   text-align: center;
