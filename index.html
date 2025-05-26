@@ -15,7 +15,18 @@
   <button class="btn math-btn" onclick="scrollToSection('math')">📘 Innovative Math Program</button>
   <button class="btn contact-btn" onclick="scrollToSection('contact')">📞 Contact Details</button>
   <button class="btn about-btn" onclick="scrollToSection('about')">👩‍🎓 About Me</button>
-  <button class="btn journey-btn" onclick="scrollToSection('journey')">📖 Ups & Downs (Blog)</button>    
+  <div class="dropdown">
+  <button class="btn journey-btn">📖 Ups & Downs (Blog) ⌄</button>
+  <div class="dropdown-content">
+    <a href="#passion">🌟 Passion changes Impossibles into Miracles</a>
+    <a href="#firststeps">🚶 First Steps in the UK</a>
+    <a href="#presentation">🎤 My First Big Presentation</a>
+    <a href="#researchvisit">🌿 Lessons from a Research Visit</a>
+    <a href="#fieldsmedal">🏆 Meeting Fields Medalist</a>
+    <a href="#publication">📚 First Research Publication</a>
+    <a href="#graduation">🎓 Graduation Day</a>
+  </div>
+ 
   <button class="btn gallery-btn" onclick="scrollToSection('gallery')">📸 Gallery</button>
 </div>
 
@@ -233,7 +244,7 @@ challenge.</p></li>
 
   <section id="journey" class="blog-section">
   <h2>📖 Ups & Downs (Blog)</h2>
- <article class="blog-post" style="font-family: sans-serif; line-height: 1.6; padding: 1rem; background-color: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+ <article id="passion" class="blog-post" style="font-family: sans-serif; line-height: 1.6; padding: 1rem; background-color: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
    <h3 class="blog-title" style="font-size: 1.8rem; color: #2c3e50; margin-bottom: 0.5rem;">🌟 Passion changes Impossibles into Miracles</h3>
    <p class="blog-date" style="color: #7f8c8d; font-style: italic;">🗓️ 2021–2023</p>
    <blockquote class="blog-quote" style="margin: 1rem 0; padding: 1rem; background-color: #fffbea; border-left: 5px solid #f39c12; font-style: italic; font-size: 1.2rem;">
@@ -274,7 +285,7 @@ If you want something, you have to create your own opportunities and do it for y
 </article>
 
   
-   <article class="blog-post">
+   <article id="firststeps" class="blog-post">
     <h3 class="blog-title"> First Steps in the UK as a Mathematics Researcher</h3>
     <p class="blog-date">🗓️ 23rd October 2023</p>
 
@@ -295,7 +306,7 @@ If you want something, you have to create your own opportunities and do it for y
     <p><strong>So I am here.</strong> Never lose your inner child, I think this makes life feel lighter.</p>
   </article>
     
-<article class="blog-post">
+<article id="presentation" class="blog-post">
   <h3 class="blog-title">🎤 My First Big Presentation – 70 People, 20 academics and researchers, only woman </h3>
   <p class="blog-date">🗓️ June 2024</p>
 
@@ -319,7 +330,7 @@ If you want something, you have to create your own opportunities and do it for y
   <p>📸 <a href="javascript:void(0);" onclick="scrollToSection('gallery')" class="gallery-link">
 Click here to see the presentation in the Gallery section.</a></p>
 </article>
-    <article class="blog-post">
+    <article id="researchvisit" class="blog-post">
   <h3 class="blog-title">🌿 Lessons Learned on a Research Visit — Rising from the Lowest Point</h3>
   <p class="blog-date">🗓️ 12th July 2024</p>
 
@@ -341,7 +352,7 @@ Click here to see the presentation in the Gallery section.</a></p>
       I thank the SAMBa CDT for funding this visit.
   <p><strong>God is great!!</strong></p>
 </article>
-<article class="blog-post horizontal-layout">
+<article  id="fieldsmedal" class="blog-post horizontal-layout">
   <div class="post-text">
   <h3 class="blog-title">🏆 A Memorable Day – Meeting Fields Medalist Maryna Viazovska</h3>
   <p class="blog-date">🗓️ 20th July 2024</p>
@@ -366,7 +377,7 @@ Click here to see the presentation in the Gallery section.</a></p>
     <img src="fields.jpg" alt="Meeting Maryna Viazovska" class="blog-image">
   </div>
 </article>
-<article class="blog-post">
+<article id="publication" class="blog-post">
   <h3 class="blog-title">📚 First Research Publication – Believing Beyond Doubt</h3>
   <p class="blog-date">🗓️ 2nd November 2024</p>
 
@@ -394,7 +405,7 @@ Click here to see the presentation in the Gallery section.</a></p>
 
   <p>🔗 <a href="https://doi.org/10.33774/miir-2024-jr8sm" target="_blank" class="gallery-link">Read the report (Section 7.4 is my work)</a></p>
 </article>
-<article class="blog-post horizontal-layout">
+<article id="graduation" class="blog-post horizontal-layout">
   <div class="post-text">
     <h3 class="blog-title">🎓 Graduation Day – A Masterpiece of Perseverance</h3>
     <p class="blog-date">🗓️ 16th January 2025</p>
