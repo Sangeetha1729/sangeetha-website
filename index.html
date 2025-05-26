@@ -11,7 +11,21 @@
     <p>Mathematician | Researcher | Educator| Socialist | Entrepreneur</p>
   </header>
     <div class="button-section">
-  <button class="btn research-btn" onclick="scrollToSection('research')">🧪 Research Experience</button>
+<div class="dropdown">
+  <button class="btn research-btn">🧪 Research Experience ⌄</button>
+  <div class="dropdown-content">
+    <a href="#education">🏔️ Education</a>
+    <a href="#landslide">🏔️ Soil Moisture Modelling (Landslides)</a>
+    <a href="#covid">🦠 COVID-19 Model Analysis(Infectious diseases)</a>
+    <a href="#wave-energy">🌊 Wave Energy Harvesting(Clean energy)</a>
+    <a href="#bathymetry">🌊 River Bathymetry Estimation(Flooding)</a>
+    <a href="#fire-spread">🔥 Fire Spread Modelling(Wildfires)</a>
+    <a href="#contaminant">🧫 Contaminant Transport Modelling(Clean water)</a>
+     <a href="#publication">🏔️Publication</a>
+  </div>
+</div>
+>
+
   <button class="btn math-btn" onclick="scrollToSection('math')">📘 Innovative Math Program</button>
   <button class="btn contact-btn" onclick="scrollToSection('contact')">📞 Contact Details</button>
   <button class="btn about-btn" onclick="scrollToSection('about')">👩‍🎓 About Me</button>
@@ -39,7 +53,7 @@ learning, statistical models, dynamical models, agent-based models and numerical
   </section>
 
   <section>
-  <h2>Education</h2>
+  <h2 id="education">Education</h2>
   <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
     
     <!-- Education List -->
@@ -68,18 +82,18 @@ learning, statistical models, dynamical models, agent-based models and numerical
 
   <section>
     <h2>Thesis Projects</h2>
-    <p><strong>Soil Moisture Modelling for Landslide Forecasting</strong>- The project is about Brazilian landslides, where I am deriving and exploring a toy model, a
+    <p id="landslide"><strong>Soil Moisture Modelling for Landslide Forecasting</strong>- The project is about Brazilian landslides, where I am deriving and exploring a toy model, a
 coupled system of surface and subsurface water flows using 2D Saint Venant and 1D Richard
 equations. Also, I explored Hydrus 1D(a hydrological software) and used Roe solver(a finite
 volume technique) for simulations. – Supervised by Prof. Tristan Pryer, University of Bath, UK</p>
-    <p><strong>COVID-19 Model Analysis</strong>- I applied fixed-point methods and fractional operators in these COVID-19 models like SEIARM,
+    <p id="covid"><strong>COVID-19 Model Analysis</strong>- I applied fixed-point methods and fractional operators in these COVID-19 models like SEIARM,
 SEIR, SCIRD, and SIR to find unique solutions for the 2019-nCoV models. – Supervised by Dr. K. Kaliraj, University of Madras, India</p>
   </section>
 
   <section>
     <h2>Scientific Experience (Selected)</h2>
     <ul>
-      <li><p><strong>Wave Energy Harvesting</strong> (ESGI180, University of Birmingham, 2024) - Research Collaboration:<strong> Collaborated with 20 academics, PhD students and post-docs from different parts of
+      <li id="wave-energy"><p><strong>Wave Energy Harvesting</strong> (ESGI180, University of Birmingham, 2024) - Research Collaboration:<strong> Collaborated with 20 academics, PhD students and post-docs from different parts of
 the world. Also, presented our work in front of 70 people. Only women in the whole group.</strong> This work considers the design of a wave energy converter employing the WITT device: a
 machine that is able to convert motion in all 6 degrees of freedom into electrical power. Various
 designs for housing the WITT device inside a buoy are investigated with the aim of converting the
@@ -91,7 +105,7 @@ Witt device using an optimisation technique </strong>.
 Below is the optimisation simulation</p>
     <img src="Optimisation.png" alt="Optimisation simulation for WITT device"
      style="width: 100%; max-width: 500px; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 10px;"> </li>
-      <li><p><strong>River Bathymetry Estimation</strong> (SAMBa, 2024) - This research introduces a novel method for estimating river bathymetry using available datasets,
+      <li id="bathymetry"><p><strong>River Bathymetry Estimation</strong> (SAMBa, 2024) - This research introduces a novel method for estimating river bathymetry using available datasets,
 bypassing extensive field measurements. Utilizing hydraulic geometry and shallow water
 equations, we develop a model for non-uniform flow conditions. We compare two optimization
 techniques: nonlinear least squares and the Nelder-Mead method. While nonlinear least squares
@@ -99,7 +113,7 @@ can overfit noisy data, the Nelder-Mead method proves more robust and efficient.
 river model highlights the importance of precise parameter calibration. Findings show the
 Nelder-Mead method significantly outperforms nonlinear least squares in noisy data
 environments, enhancing flood prediction accuracy. Below are the simulations. </p> <img src="irp.png" alt="Optimisation Simulation for Bathymetry" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 10px;"> </li>
-      <li><p><strong>Fire Spread Modelling</strong> (workshop - BeZero Carbon, 2024) - The partner we worked with is BeZero Carbon. The primary problem revolves around the
+      <li id="fire-spread"><p><strong>Fire Spread Modelling</strong> (workshop - BeZero Carbon, 2024) - The partner we worked with is BeZero Carbon. The primary problem revolves around the
 development of a stochastic model to understand the spread of forest fires and the underlying
 causes. I used an agent-based model and real data to tackle this challenge and also used
 Repast(python toolkit) for simulations. You can see the simulations below.</p>
@@ -107,7 +121,7 @@ Repast(python toolkit) for simulations. You can see the simulations below.</p>
     <source src="Gif.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video> </li>
-      <li><strong><p>Contaminant Transport Modelling</strong> (Worshop - Wessex Water, 2023) - The industry partner we worked with is Wessex Water. The challenge they proposed is to
+      <li id="contaminant"><strong><p>Contaminant Transport Modelling</strong> (Worshop - Wessex Water, 2023) - The industry partner we worked with is Wessex Water. The challenge they proposed is to
 improve the modelling of the concentration of harmful bacteria in a river network, to
 provide users of the river with live information on water quality. Wessex Water is interested
 in finding out how long it takes bacteria to be carried between the sources and the sample
@@ -117,7 +131,7 @@ challenge.</p></li>
   </section>
 
 <section>
-  <h2>Publication (Non-Peer-Reviewed)</h2>
+  <h2 id="publication">Publication (Non-Peer-Reviewed)</h2>
   <ul>
     <li>
       Gabriel Cairns, Nicholas Ryan, John Paul Alexander, Graeme Hocking, Brady Metherall, Hilary Ockendon, John Ockendon, Bernard Piette, Niall Rodgers, <strong>Sangeetha Sampath</strong>, Robert J. Whittaker.  
