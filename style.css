@@ -42,6 +42,10 @@ ul {
 .button-section {
   text-align: center;
   margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
 /* Button Styles */
@@ -53,49 +57,27 @@ ul {
   border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
+  background-color: #007BFF; /* Blue */
+  color: white;               /* White text */
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
   transform: scale(1.05);
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
-/* Individual Button Colors */
-.btn.gallery-btn {
-  background-color: #ffd1dc;
-  color: #000;
-  border: 1px solid #ffb6c1;
-  padding: 10px 15px;
-  border-radius: 8px;
-}
-
-.btn.journey-btn {
-  background-color: #e0f7fa;
-  color: #333;
-  border: 1px solid #ccc;
-  padding: 10px 15px;
-  border-radius: 8px;
-}
-
-.research-btn {
-  background-color: #007BFF;
-  color: red;
-}
-
-.math-btn {
-  background-color: #28a745;
-  color: red;
-}
-
-.contact-btn {
-  background-color: #ff6347;
-  color: red;
-}
-
+/* Remove old individual button colors */
+.btn.gallery-btn,
+.btn.journey-btn,
+.research-btn,
+.math-btn,
+.contact-btn,
 .about-btn {
-  background-color: #6f42c1;
-  color: red;
+  background-color: #007BFF;
+  color: white;
+  border: none;
 }
 
 /* Dropdown */
@@ -108,7 +90,7 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #007BFF;
   min-width: 250px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -117,15 +99,16 @@ ul {
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   font-family: sans-serif;
+  transition: background-color 0.2s ease;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #0056b3;
 }
 
 .dropdown:hover .dropdown-content {
