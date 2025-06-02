@@ -576,26 +576,19 @@ Click here to see the presentation in the Gallery section.</a></p>
   <footer>
     <p>Created by Sangeetha Sampath | © 2025</p>
   </footer>
-  <script>
-    function showSection(id) {
-      const allSections = document.querySelectorAll('.section-content');
-      allSections.forEach(section => section.style.display = 'none');
+ <script>
+  function showSection(id) {
+    const allSections = document.querySelectorAll('.section-content');
+    allSections.forEach(section => section.style.display = 'none');
 
-      const selected = document.getElementById(id);
-      if (selected) {
-        selected.style.display = 'block';
-        selected.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  </script>
-<script>
-  function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    const target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.scrollIntoView({ behavior: 'smooth' });
     }
   }
- </script>
+</script>
+
 
 </body>
 </html>
