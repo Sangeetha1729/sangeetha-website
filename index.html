@@ -579,12 +579,18 @@ Click here to see the presentation in the Gallery section.</a></p>
     <p>Created by Sangeetha Sampath | © 2025</p>
   </footer>
   <script>
-  function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    function showSection(id) {
+      const allSections = document.querySelectorAll('.section-content');
+      allSections.forEach(section => section.style.display = 'none');
+
+      const selected = document.getElementById(id);
+      if (selected) {
+        selected.style.display = 'block';
+        selected.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  }
- </script>
+  </script>
+
+
 </body>
 </html>
