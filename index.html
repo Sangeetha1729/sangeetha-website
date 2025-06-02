@@ -590,7 +590,14 @@ Click here to see the presentation in the Gallery section.</a></p>
       }
     }
   </script>
-
+<script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+ </script>
 
 </body>
 </html>
