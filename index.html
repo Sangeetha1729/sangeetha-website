@@ -3,7 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <title>Dr Sangeetha Sampath Mathematician (coming soon)</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #1c1c1c;
+      color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, rgba(26,26,64,0.9), rgba(0,0,0,0.9)), url('header-bg.jpg') no-repeat center center/cover;
+      color: #f8f8f8;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.2em;
+    }
+
+    .button-section {
+      text-align: center;
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 260px;
+      border-radius: 10px;
+      z-index: 1;
+      padding: 10px 0;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+      font-size: 0.95em;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .section-content {
+      display: none;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #000;
+      border-radius: 10px;
+      margin: 20px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .section-content.show {
+      display: block !important;
+      opacity: 1;
+    }
+
+    .section-content ul li,
+    .blog-post {
+      background-color: #fff;
+      color: #000;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #111;
+      color: #ccc;
+      margin-top: 40px;
+    }
+
+    .gallery-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #1a75ff;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .gallery-link:hover {
+      background: #3399ff;
+    }
+
+    .post-image img,
+    .blog-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .contact-box a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    .horizontal-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .post-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .post-image {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    /* Responsive Tweaks */
+    @media (max-width: 768px) {
+      .horizontal-layout {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
   <style>
     body {
       font-family: 'Arial', sans-serif;
