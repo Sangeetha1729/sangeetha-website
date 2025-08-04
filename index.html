@@ -279,7 +279,7 @@
     }
   </style>
 <body>
-
+</head>
   <header>
     <h1>Sangeetha Sampath</h1>
     <p>Mathematician | Researcher | Educator | Socialist | Entrepreneur</p>
@@ -761,19 +761,23 @@ Click here to see the presentation in the Gallery section.</a></p>
   <footer>
     <p>Created by Sangeetha Sampath | © 2025</p>
   </footer>
- <script>
-  function showSection(id) {
-    const allSections = document.querySelectorAll('.section-content');
-    allSections.forEach(section => section.style.display = 'none');
+<script>
+    function showSection(id) {
+      const allSections = document.querySelectorAll('.section-content');
+      allSections.forEach(section => {
+        section.classList.remove('show');
+        section.style.display = 'none';
+      });
 
-    const target = document.getElementById(id);
-    if (target) {
-      target.style.display = 'block';
-      target.scrollIntoView({ behavior: 'smooth' });
+      const target = document.getElementById(id);
+      if (target) {
+        target.style.display = 'block';
+        setTimeout(() => {
+          target.classList.add('show');
+          target.scrollIntoView({ behavior: 'smooth' });
+        }, 50);
+      }
     }
-  }
-</script>
-
-
+  </script>
 </body>
 </html>
