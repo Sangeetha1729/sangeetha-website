@@ -762,22 +762,28 @@ Click here to see the presentation in the Gallery section.</a></p>
     <p>Created by Sangeetha Sampath | © 2025</p>
   </footer>
 <script>
-    function showSection(id) {
-      const allSections = document.querySelectorAll('.section-content');
-      allSections.forEach(section => {
-        section.classList.remove('show');
-        section.style.display = 'none';
-      });
+  function showSection(id) {
+    const allSections = document.querySelectorAll('.section-content');
+    allSections.forEach(section => {
+      section.classList.remove('show');
+      section.style.display = 'none';
+    });
 
-      const target = document.getElementById(id);
-      if (target) {
-        target.style.display = 'block';
-        setTimeout(() => {
-          target.classList.add('show');
-          target.scrollIntoView({ behavior: 'smooth' });
-        }, 50);
-      }
+    const target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      setTimeout(() => {
+        target.classList.add('show');
+        target.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
     }
-  </script>
+  }
+
+  // Automatically show the "Innovative Math Program" section when the page loads
+  window.onload = function() {
+    showSection('math');
+  };
+</script>
+
 </body>
 </html>
