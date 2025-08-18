@@ -321,6 +321,7 @@
     </div>
 
     <button class="btn gallery-btn" onclick="showSection('gallery')">📸 Gallery</button>
+     <button class="btn Presentations-btn" onclick="showSection('Presentations')">📸 Presentations and conferences</button>
   </div>
 
   <section class="section-content" id="education">
@@ -743,6 +744,256 @@ Click here to see the presentation in the Gallery section.</a></p>
   <p>Click below to see my first big presentation at the ESGI180 study group in front of 70 people</p>
   <a href="https://drive.google.com/file/d/1Z86YXUSfF2y1lbN6Lw3UqdvwaWabdL8Q/view?usp=drivesdk" target="_blank" class="gallery-link">📸 View Photo Album</a>
 </section>
+<!-- ===== Presentations Section ===== -->
+<section id="presentations" class="presentations">
+  <div class="container">
+    <header class="section-header">
+      <h3>🎤 Selected Presentations</h3>
+      <p>Talks(small clips) across the UK & Europe (30–70 academics and industry partners).</p>
+    </header>
+
+    <div class="media-grid" role="list">
+      <!-- VIDEO CARD -->
+      <button class="media-card" role="listitem"
+              data-type="video" data-src="prev1.mp4" aria-label="Play presentation clip 1">
+        <div class="media-thumb">
+          <video src="prev1.mp4" preload="metadata" muted playsinline
+                 aria-hidden="true"></video>
+          <span class="badge badge-video" aria-hidden="true">▶</span>
+        </div>
+        <div class="media-meta">
+          <h4>SS Great Britain ship — ESGI187, Bristol, UK(70 people)</h4>
+          <span>Short clip</span>
+        </div>
+      </button>
+
+      <button class="media-card" role="listitem"
+              data-type="video" data-src="prev2.mp4" aria-label="Play presentation clip 2">
+        <div class="media-thumb">
+          <video src="prev2.mp4" preload="metadata" muted playsinline aria-hidden="true"></video>
+          <span class="badge badge-video" aria-hidden="true">▶</span>
+        </div>
+        <div class="media-meta">
+          <h4> CO2 modelling from UK pipelines(HSE Industry), Leeds, UK</h4>
+          <span>Short clip</span>
+        </div>
+      </button>
+
+      <button class="media-card" role="listitem"
+              data-type="video" data-src="prev3.mp4" aria-label="Play presentation clip 3">
+        <div class="media-thumb">
+          <video src="prev3.mp4" preload="metadata" muted playsinline aria-hidden="true"></video>
+          <span class="badge badge-video" aria-hidden="true">▶</span>
+        </div>
+        <div class="media-meta">
+          <h4>Wave energy for Witt energy, Birmingham, UK (70 people)</h4>
+          <span>Short clip</span>
+        </div>
+      </button>
+
+      <!-- IMAGE CARDS -->
+      <!-- Repeat pattern for all images -->
+      <button class="media-card" role="listitem"
+              data-type="image" data-src="preimg1.jpg" aria-label="Open photo 1">
+        <div class="media-thumb">
+          <img src="preimg1.jpg" loading="lazy" alt="Conference presentation photo 1">
+        </div>
+        <div class="media-meta">
+          <h4>SS Great Britain Ship at ESGI 187</h4>
+          <span>In-session photo</span>
+        </div>
+      </button>
+
+      <button class="media-card" role="listitem"
+              data-type="image" data-src="preimg2.jpg" aria-label="Open photo 2">
+        <div class="media-thumb">
+          <img src="preimg2.jpg" loading="lazy" alt="Conference presentation photo 2">
+        </div>
+        <div class="media-meta">
+          <h4>Q&amp;Field work</h4>
+          <h4>Ship measurement taking picture at SS Great Britain</h4>
+        </div>
+      </button>
+
+      <!-- Add the rest similarly -->
+      <button class="media-card" role="listitem" data-type="image" data-src="preimg3.jpg" aria-label="Open photo 3">
+        <div class="media-thumb"><img src="preimg3.jpg" loading="lazy" alt="Presentation photo 3"></div>
+        <div class="media-meta"><h4>The ship</h4><span>This is the ship we measured</span></div>
+      </button>
+
+      <button class="media-card" role="listitem" data-type="image" data-src="preimg4.jpg" aria-label="Open photo 4">
+        <div class="media-thumb"><img src="preimg4.jpg" loading="lazy" alt="Presentation photo 4"></div>
+        <div class="media-meta"><h4>Alumni</h4><span>participated as alumni</span></div>
+      </button>
+
+      <button class="media-card" role="listitem" data-type="image" data-src="preimg5.jpg" aria-label="Open photo 5">
+        <div class="media-thumb"><img src="preimg5.jpg" loading="lazy" alt="Presentation photo 5"></div>
+        <div class="media-meta"><h4>Discussion</h4><span>Hands-on session</span></div>
+      </button>
+
+      <button class="media-card" role="listitem" data-type="image" data-src="preimg6.jpg" aria-label="Open photo 6">
+        <div class="media-thumb"><img src="preimg6.jpg" loading="lazy" alt="Presentation photo 6"></div>
+        <div class="media-meta"><h4>As Alumni</h4><span>Again presenting  as alumnus</span></div>
+      </button>
+
+      <button class="media-card" role="listitem" data-type="image" data-src="preimg7.jpg" aria-label="Open photo 7">
+        <div class="media-thumb"><img src="preimg7.jpg" loading="lazy" alt="Presentation photo 7"></div>
+        <div class="media-meta"><h4>Good memories</h4><span>As alumunus</span></div>
+      </button>
+
+      <button class="media-card" role="listitem" data-type="image" data-src="preimg8.jpg" aria-label="Open photo 8">
+        <div class="media-thumb"><img src="preimg8.jpg" loading="lazy" alt="Presentation photo 8"></div>
+        <div class="media-meta"><h4>Conference dinner</h4><span>The networking place</span></div>
+      </button>
+
+      <button class="media-card" role="listitem" data-type="image" data-src="preimg9.jpg" aria-label="Open photo 9">
+        <div class="media-thumb"><img src="preimg9.jpg" loading="lazy" alt="Presentation photo 9"></div>
+        <div class="media-meta"><h4>Conference Hall</h4><span>With partners</span></div>
+      </button>
+
+      <button class="media-card" role="listitem" data-type="image" data-src="preimg10.jpg" aria-label="Open photo 10">
+        <div class="media-thumb"><img src="preimg10.jpg" loading="lazy" alt="Presentation photo 10"></div>
+        <div class="media-meta"><h4>The big entrance part</h4><span>Q&A</span></div>
+      </button>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" aria-hidden="true" aria-label="Media viewer" role="dialog">
+    <button class="lightbox-close" aria-label="Close viewer">✕</button>
+    <div class="lightbox-content" tabindex="-1"></div>
+  </div>
+</section>
+
+<style>
+  :root{
+    --bg:#0b0c10;
+    --panel:#11131a;
+    --muted:#aab2c5;
+    --text:#eaf0ff;
+    --ring:rgba(114,137,218,0.4);
+    --card:#151826;
+    --card-border:rgba(255,255,255,0.06);
+  }
+  .presentations{background:var(--bg); color:var(--text); padding:4rem 1rem;}
+  .presentations .container{max-width:1100px; margin:0 auto;}
+  .section-header h3{font-size:1.75rem; margin:0 0 .5rem;}
+  .section-header p{color:var(--muted); margin:0 0 1.5rem;}
+  .media-grid{
+    display:grid; gap:1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+  }
+  .media-card{
+    display:flex; flex-direction:column; gap:.5rem;
+    background:var(--card); border:1px solid var(--card-border);
+    border-radius:16px; padding:.75rem;
+    cursor:pointer; text-align:left;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .media-card:focus-visible{outline:3px solid var(--ring); outline-offset:2px;}
+  .media-card:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.25); border-color:rgba(255,255,255,.12);}
+  .media-thumb{position:relative; overflow:hidden; border-radius:12px; aspect-ratio:16/9; background:#0d0f16;}
+  .media-thumb img, .media-thumb video{width:100%; height:100%; object-fit:cover; display:block;}
+  .media-meta h4{font-size:1rem; margin:.25rem 0 0;}
+  .media-meta span{font-size:.85rem; color:var(--muted);}
+  .badge{position:absolute; bottom:.5rem; right:.5rem; background:#000000aa; color:#fff;
+         padding:.25rem .5rem; border-radius:999px; font-size:.8rem; line-height:1;}
+  .badge-video{font-weight:700}
+  /* Hover reveal */
+  .media-thumb::after{
+    content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.35), transparent 40%);
+    opacity:0; transition:opacity .2s ease;
+  }
+  .media-card:hover .media-thumb::after{opacity:1;}
+
+  /* Lightbox */
+  .lightbox{position:fixed; inset:0; background:rgba(0,0,0,.8); display:none; align-items:center; justify-content:center; padding:2rem; z-index:9999;}
+  .lightbox[aria-hidden="false"]{display:flex;}
+  .lightbox-content{max-width:min(1000px, 92vw); max-height:80vh; outline:none;}
+  .lightbox-content img, .lightbox-content video{width:100%; height:auto; max-height:80vh; border-radius:12px; display:block;}
+  .lightbox-close{
+    position:absolute; top:1rem; right:1rem; background:#ffffff14; color:#fff;
+    border:1px solid #ffffff2a; border-radius:10px; padding:.5rem .65rem; cursor:pointer; font-size:1rem;
+    transition:background .2s ease, transform .1s ease;
+  }
+  .lightbox-close:hover{background:#ffffff22; transform:scale(1.05);}
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .media-card{transition:none}
+    .media-thumb::after{transition:none}
+    .lightbox-close{transition:none}
+  }
+</style>
+
+<script>
+  (function(){
+    const grid = document.querySelector('#presentations .media-grid');
+    const lightbox = document.querySelector('#presentations .lightbox');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const content = lightbox.querySelector('.lightbox-content');
+    let lastFocus = null;
+
+    function openLightbox(type, src){
+      content.innerHTML = '';
+      const el = document.createElement(type === 'video' ? 'video' : 'img');
+      if(type === 'video'){
+        el.src = src;
+        el.controls = true;
+        el.playsInline = true;
+        el.autoplay = true;
+      }else{
+        el.src = src;
+        el.alt = 'Presentation media';
+        el.loading = 'eager';
+      }
+      content.appendChild(el);
+      lightbox.setAttribute('aria-hidden','false');
+      lastFocus = document.activeElement;
+      content.focus();
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(){
+      lightbox.setAttribute('aria-hidden','true');
+      content.innerHTML = '';
+      document.body.style.overflow = '';
+      if(lastFocus){ lastFocus.focus(); }
+    }
+
+    // Open on card click
+    grid.addEventListener('click', (e)=>{
+      const card = e.target.closest('.media-card');
+      if(!card) return;
+      const type = card.dataset.type;
+      const src = card.dataset.src;
+      if(src) openLightbox(type, src);
+    });
+
+    // Keyboard: Enter/Space on card
+    grid.addEventListener('keydown', (e)=>{
+      if((e.key === 'Enter' || e.key === ' ') && e.target.classList.contains('media-card')){
+        e.preventDefault();
+        const card = e.target;
+        openLightbox(card.dataset.type, card.dataset.src);
+      }
+    });
+
+    // Close actions
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e)=>{ if(e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && lightbox.getAttribute('aria-hidden')==='false') closeLightbox(); });
+
+    // Optional: tiny hover previews for videos (muted, no autoplay on mobile)
+    const isTouch = matchMedia('(hover: none)').matches;
+    if(!isTouch){
+      grid.querySelectorAll('.media-card[data-type="video"] video').forEach(v=>{
+        v.addEventListener('mouseenter', ()=>{ v.currentTime = 0; v.play().catch(()=>{}); });
+        v.addEventListener('mouseleave', ()=>{ v.pause(); });
+      });
+    }
+  })();
+</script>
+
   
   <footer>
     <p>Created by Sangeetha Sampath | © 2025</p>
